@@ -1,0 +1,33 @@
+body 
+{
+    background-color: rgb(255, 239, 213)
+}
+h1{
+    color: midnightblue;
+}
+h2 {
+    color: indigo:
+}
+h3 {
+    color: rebeccapurple
+}
+p {
+    color: midnightblue;
+}
+h1 {font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+h2 {font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+h3 {font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+h1 {font-size: 3em;
+}
+h2 {font-size: 2em;
+}
+h3 {font-size: 1.5em;
+}
+p {font-size: 1.5em;
+}
+h1 {
+    border-bottom: 6px solid indigo;
+}
