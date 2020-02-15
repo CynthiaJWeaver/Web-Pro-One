@@ -1,0 +1,184 @@
+*{margin: 2px;
+    padding: 2px;
+ }
+ .grid {
+    display: grid;
+    grid-template-columns: 24% 31% 45%;
+    grid-template-areas:
+    "name welcome welcome"
+    "assign content1 content2"
+    "sidebar content3 content4"
+    "footer footer footer";   
+ }
+ .name {
+    grid-area: name;
+    justify-self: left;
+ }
+ .welcome {
+    grid-area: welcome;
+    justify-self: center;
+ 
+ }
+ .assign {
+    grid-area: assign;
+ 
+ }
+ /*Because of the fixed img sizes, this does not work minimized window*/
+ .content1 {
+    grid-area: content1;
+    justify-self: center;
+    text-align: center;
+    margin: 120px auto 10px auto;
+    padding: 10px;
+    border: 5px solid midnightblue;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+ 
+ }
+ /*the key to placing the summiting text-create a separate div for text*/
+ .content2 {
+    grid-area: content2;
+    justify-self: center;
+    margin: 120px auto 10px auto;
+    padding: 10px;
+    border: 5px solid midnightblue;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    text-align: center;
+ 
+ 
+   
+ }
+ .sidebar {
+    grid-area: sidebar;
+ }
+ .content3 {
+    grid-area: content3;
+    justify-self: center;
+    text-align: center;
+    margin: 120px auto 10px auto;
+    padding: 10px;
+    border: 5px solid midnightblue;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+ }
+ .content4 {
+    grid-area: content4;
+    justify-self: center;
+    text-align: center;
+    margin: 120px auto 10px auto;
+    padding: 10px;
+    border: 5px solid midnightblue;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+ }
+ .footer{
+    grid-area: footer;
+ }
+  .grid div .header {
+     background-color: rgb(171, 142, 201);
+  }  
+ body
+  {
+     background-color: rgb(255, 239, 213)
+  }
+  h1 {
+    color: midnightblue;
+ }
+ 
+ h2 {
+    color: indigo;
+ }
+ 
+ h3 {
+    color: midnightblue;
+ }
+ h4 {
+    color: rebeccapurple;
+ }
+ p {
+    color: midnightblue;
+ }
+ h1 {font-family: "Trebuchet MS", Helvetica, sans-serif;
+ }
+ h2 {font-family: "Trebuchet MS", Helvetica, sans-serif;
+ }
+ h3 {font-family: "Trebuchet MS", Helvetica, sans-serif;
+ }
+ h4 {font-family: "Trebuchet MS", Helvetica, sans-serif;
+ }
+ p {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+  }
+  h1 {font-size: 3em;
+  }   
+ h2 {font-size: 2em;
+ }
+ h3 {font-size: 1.5em;
+ }
+ p {font-size: 1.2em;
+ }
+ h1 {
+    border-bottom: 6px solid indigo;
+ }
+ 
+ .summit {
+    float: right;
+ }
+ a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  a:active {
+    text-decoration: underline;
+  }
+  a:link {
+    color: midnightblue;
+    }
+ 
+    a:visited {
+    color: rgb(171, 142, 201);
+    }
+ 
+ 
+    a:hover {
+    color: lightblue;
+    }
+ 
+    a:active {
+    color: blue;
+    }
+ 
+      
+    /*I need to organize my css code into style sheets*/
+    /*the container below is under construction*/
+ .grid-container {
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-gap: 10px;
+     background-color: #2196F3;
+    padding: 10px;
+     }
+     
+    .grid-container > div {
+     background-color: rgba(255, 255, 255, 0.8);
+     text-align: center;
+     padding: 20px 0;
+     font-size: 30px;
+     }   
+           
+    
+       
