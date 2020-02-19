@@ -179,6 +179,14 @@
      padding: 20px 0;
      font-size: 30px;
      }   
-           
+   /*begin responsive coding************************************* */
+   .assign, .content2 {
+      float: left;
+      width:20%;
+   }   
+   .content1 {
+      float: left;
+      width: 60%;
+   }
     
        
