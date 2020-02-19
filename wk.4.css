@@ -11,5 +11,7 @@ p {
     color: rgb(22, 3, 3);
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-   
+}
+.panoramic {
+    align-content: center;
 }
