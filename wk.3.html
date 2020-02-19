@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
-
+<!--Make responsive. Create for smallest screen size first. go here to star: https://www.w3schools.com/html/html_responsive.asphere  -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<!--added viewport meta element-->
 <body>
 
     <head>
@@ -11,11 +13,13 @@
     </head>
     <div class="grid">
         <div class="name">
-            <!-- <h2>Cynthia Weaver</h2> -->
+    <!--responsive font using vw-->
+            <h2 style="font-size: 5vw">Cynthia Weaver</h2>
         </div>
         <div class="welcome">
-            <h1>Welcome to My World!</h1>
+            <h1 style= "font-size:10vw">Welcome to My World!</h1>
         </div>
+        <!--Add dropdown menu here. see https://www.w3schools.com/howto/howto_css_dropdown.asp for help-->
         <div class="assign">
             <h3>Web Programming 1</h3>
             <h4>Assignment Links:</h4>
@@ -28,8 +32,9 @@
 
 
         </div>
-        <!--I'm working on aligning the images to make them more appealing-->
+        <!--I'm working on aligning the images to make them more appealing wk2-->
         <div class="content1">
+        <!--adding style= "max-width:... for responsiveness-->
             <img src="images\langartscafe1.jpg" alt="language arts cafe" width="270" height="180" />
             <p> Teaching English
                 Language
@@ -40,14 +45,13 @@
         <!--ctrl Z is my friend-->
 
         <div class="content2">
-            <img class="summit" src="images\bloodmountain.jpg" alt="summit blood mountain" width="388" Height="300"
-                alt="summit blood mountain" />
+            <img class="summit" src="images\bloodmountain.jpg" alt="summit blood mountain" width="388" Height="300"/>
             <div class="summittext">
                 <p>Summiting Blood Mountain on the Appalachian Trail</p>
             </div>
             <!--still working on how to move the text for blood mnt where I want-->
         </div>
-        <div class="sidebar">links</div>
+        <div class="sidebar"></div>
         <div class="content3">
             <img src="images\womanpullinghairout.jpg" alt="pulling out hair" width="300" Height="200" />
             <p>Programming a First Web Page </p>

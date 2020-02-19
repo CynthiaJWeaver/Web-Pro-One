@@ -1,4 +1,4 @@
-*{ margin: 2px;
+*{margin: 2px;
     padding: 2px;
  }
  .grid {
@@ -30,6 +30,8 @@
     text-align: center;
     margin: 120px auto 10px auto;
     padding: 10px;
+    float: left;
+    width: 20%;
     border: 5px solid midnightblue;
     border-radius: 10px;
     -moz-border-radius: 10px;
@@ -42,6 +44,8 @@
     justify-self: center;
     margin: 120px auto 10px auto;
     padding: 10px;
+    float: left;
+    width: 20%;
     border: 5px solid midnightblue;
     border-radius: 10px;
     -moz-border-radius: 10px;
@@ -60,6 +64,8 @@
     text-align: center;
     margin: 120px auto 10px auto;
     padding: 10px;
+    float: left;
+    width: 20%;
     border: 5px solid midnightblue;
     border-radius: 10px;
     -moz-border-radius: 10px;
@@ -71,6 +77,8 @@
     text-align: center;
     margin: 120px auto 10px auto;
     padding: 10px;
+    float: left;
+    width: 20%;
     border: 5px solid midnightblue;
     border-radius: 10px;
     -moz-border-radius: 10px;
@@ -160,7 +168,14 @@
     a:active {
     color: blue;
     }
- 
+
+  
+    
+   @media screen and (max-width: 800px) {
+      .assign, .content1, .content2 {
+        width: 100%;  
+      }
+   }
       
     /*I need to organize my css code into style sheets*/
     /*the container below is under construction*/
@@ -179,3 +194,6 @@
      padding: 20px 0;
      font-size: 30px;
      }   
+
+   
+  

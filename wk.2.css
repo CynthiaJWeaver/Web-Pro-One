@@ -1,4 +1,4 @@
-*{margin: 2px;
+*{ margin: 2px;
     padding: 2px;
  }
  .grid {
@@ -179,18 +179,3 @@
      padding: 20px 0;
      font-size: 30px;
      }   
-   /*begin responsive coding************************************* */
-   .assign, .content2 {
-      float: left;
-      width:25%;
-   }   
-   .content1 {
-      float: left;
-      width: 30%;
-   }
-    
-   @media screen and (max-width: 800px) {
-      .assign, .content1, .content2 {
-        width: 100%;  
-      }
-   }
