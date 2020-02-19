@@ -182,11 +182,15 @@
    /*begin responsive coding************************************* */
    .assign, .content2 {
       float: left;
-      width:20%;
+      width:25%;
    }   
    .content1 {
       float: left;
-      width: 60%;
+      width: 30%;
    }
     
-       
+   @media screen and (max-width: 800px) {
+      .assign, .content1, .content2 {
+        width: 100%;  
+      }
+   }
