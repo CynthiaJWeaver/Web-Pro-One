@@ -6,8 +6,8 @@
     grid-template-columns: 33% 67%;
     grid-template-areas:
     "name welcome"
-    "assign content1"
-    "sidebar content3"
+    "side1 content1"
+    "side2 content2"
     "footer footer";   
  }
  .name {
@@ -19,8 +19,8 @@
     justify-self: left;
  
  }
- .assign {
-    grid-area: assign;
+ .side1 {
+    grid-area: side1;
  
  }
  /*Because of the fixed img sizes, this does not work minimized window*/
@@ -28,12 +28,11 @@
     grid-area: content1;
     justify-self: left;
     text-align: left;
-    margin: 50px auto 10px auto;
     padding: 1px;
     border: none
  
  }
- /*the key to placing the summiting text-create a separate div for text*/
+ 
  .content2 {
     grid-area: content2;
     justify-self: center;
@@ -44,12 +43,11 @@
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
     text-align: center;
- 
- 
    
  }
- .sidebar {
-    grid-area: sidebar;
+
+ .side1 {
+    grid-area: side1;
  }
  .content3 {
     grid-area: content3;
