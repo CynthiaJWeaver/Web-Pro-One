@@ -1,4 +1,4 @@
-function hikeFunction() {
-    document.getElementById("hike").innerHTML = 
+{
+    document.getElementById("hike")= 
     "How many days do you want to hike?";
 }
