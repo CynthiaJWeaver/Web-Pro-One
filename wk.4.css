@@ -4,14 +4,25 @@ body {
 h1, h2, h3 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: midnightblue;
-    text-align: center;
+    text-align: left;
 }
 p {
     font-size: x-large;
     color: midnightblue;
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+    text-align: left;
 }
+.button1 {
+    background-color: rgb(5, 66, 7); /* dark green*/
+    border: none;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: medium; 
+    margin-right: 5px;
+    max-width: 75px;
+  }
 .panoramic {
     align-content: center;
 } /* This may be unnecessary.*/

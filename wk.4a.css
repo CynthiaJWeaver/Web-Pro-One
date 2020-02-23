@@ -1,0 +1,78 @@
+*{ margin: 2px;
+    padding: 2px;
+ }
+ .grid {
+    display: grid;
+    grid-template-columns: 33% 67%;
+    grid-template-areas:
+    "name welcome"
+    "assign content1"
+    "sidebar content3"
+    "footer footer";   
+ }
+ .name {
+    grid-area: name;
+    justify-self: left;
+ }
+ .welcome {
+    grid-area: welcome;
+    justify-self: left;
+ 
+ }
+ .assign {
+    grid-area: assign;
+ 
+ }
+ /*Because of the fixed img sizes, this does not work minimized window*/
+ .content1 {
+    grid-area: content1;
+    justify-self: left;
+    text-align: left;
+    margin: 50px auto 10px auto;
+    padding: 1px;
+    border: none
+ 
+ }
+ /*the key to placing the summiting text-create a separate div for text*/
+ .content2 {
+    grid-area: content2;
+    justify-self: center;
+    margin: 120px auto 10px auto;
+    padding: 10px;
+    border: 5px solid midnightblue;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    text-align: center;
+ 
+ 
+   
+ }
+ .sidebar {
+    grid-area: sidebar;
+ }
+ .content3 {
+    grid-area: content3;
+    justify-self: center;
+    text-align: center;
+    margin: 120px auto 10px auto;
+    padding: 10px;
+    border: 5px solid midnightblue;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+ }
+ .content4 {
+    grid-area: content4;
+    justify-self: center;
+    text-align: center;
+    margin: 120px auto 10px auto;
+    padding: 10px;
+    border: 5px solid midnightblue;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+ }
+ .footer{
+    grid-area: footer;
+ }
