@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Weaver's World</title>
     <link rel="stylesheet" href="wk.4.css">
     <link rel="stylesheet" href="wk.4a.css">
+    <link rel="stylesheet" href="wk.4buttons.css">
 </head>
 <div class="grid">
     <div class="welcome">
-        <h1>Welcome to Weaver's Hiking World</h1>
+        <h1>Welcome to Weaver's Hiking World!</h1>
         <script src="wk.4.js"></script>
     </div>
 
@@ -22,10 +24,22 @@
     <div class="content1">
         <!--Saturday night, working here-->
         <strong>
-            <p> Plan Your Next Hiking Adventure Here!
+            <p>Plan Your Next Hiking Adventure Here!
         </strong>
         <br>
-        How many days do you want to hike?</p>
+        How many days do you want to hike?
+        <div class="dropdown"> <!--started dropdown with example form w3 schools-->
+            <button onclick="myFunction()" class="dropbtn"><strong>Hiking Days</strong></button> <!--name dropdown Hiking Days-->
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#"></a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+              <a href="#">Link 3</a>
+            </div> <!--end we schools example-->
+            <script src="wk.4a.js"></script> <!--js for drop down-->
+          </div>
+
+    </p>
         </div>
 
 
