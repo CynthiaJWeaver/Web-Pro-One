@@ -41,5 +41,6 @@
   /* Change color of dropdown links on hover */
   .dropdown-content a:hover {background-color: #ddd}
   
-  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  /* Show the dropdown menu --needs js*/
+  
   .show {display:block;}
