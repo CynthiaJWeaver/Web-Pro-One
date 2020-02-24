@@ -3,7 +3,7 @@
  }
  .grid {
     display: grid;
-    grid-template-columns: 33% 67%;
+    grid-template-columns: 36% 64%;
     grid-template-areas:
     "name welcome"
     "side1 content1"
