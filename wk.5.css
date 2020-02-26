@@ -11,6 +11,7 @@ body {
     p {
       font-family: Arial, Helvetica, sans-serif;
       font-size: x-large;
+      color: midnightblue;
     }
     
     
@@ -45,7 +46,7 @@ form {
 input, 
   textarea {
     /* font settings */
-    font: 2em sans-serif;
+    font: 1.5em sans-serif;
   
     /* size */
     width: 300px;
