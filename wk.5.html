@@ -9,6 +9,7 @@
         <title>wk.5 Web Form</title>
         <link rel="stylesheet" type="text/css" href="wk.5.css">
         <link rel="stylesheet" type="text/css" href="wk.5abutton.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     </head>
     <h1>Welcome to Western Wall School District</h1>
     <h2>Middle School Academies</h2>
@@ -20,7 +21,8 @@
     <form action="/my-handling-form-page" method="post">
         <ul>
             <li>
-                <label for="firstName">First Name:</label> <input type="text" id="firstNname" name="user_firstName">
+                <label for="firstName">First Name:</label> 
+                <br><input type="text" id="firstNname" name="user_firstName">
                 <label for="lastName">Last Name:</label>
                 <input type="text" id="firstNname" name="user_lastName">
                 <!--Name-->
@@ -67,15 +69,16 @@
                         </li>
 
         </ul>
-        <br>
+        
       
             <p><strong>Indicate your #1 school preference: </strong>
+                
             <div class="dropdown"> <!--button for school choices-->
                 <button onclick="myFunction()" class="dropbtn"><strong>Choice School</strong></button> <!--name dropdown Choice School--> </p>
                 <div id="myDropdown" class="dropdown-content">
-                    <option value="wwcams">WWCAMS</option>
-                    <option value="wwems">WWEMS</option>
-                    <option value="wwfams">WWFAMS</option>
+                    <p><option value="wwcams">WWCAMS</option></p>
+                    <p><option value="wwems">WWEMS</option></p>
+                    <p><option value="wwfams">WWFAMS</option></p>
                 </div> 
                 <script src="wk.5.js"></script> <!--js for drop down-->
                 
@@ -89,6 +92,58 @@
         <!--js for drop down-->
 
     </form>
+    
+    <div class="w3-container">
+  
+  <p>Hover over the school acronyms to see information about each.</p>
+
+  <div class="w3-dropdown-hover">WWCAMS
+    <div class="w3-dropdown-content w3-card-4" style="width:250px">
+      <img src="img_london.jpg" alt="WWCAMS" style="width:100%">
+      <div class="w3-container">
+       <h6>WWCAMS</h6>
+<p>Western Wall Culinary Arts Middle School Academy.</p>
+<p>Acquire culinary expertise. 
+<br>
+Learn restaurant and hospitality management skills.
+<br>
+Build the Confidence that comes with success and experience!</p>        
+      </div>
+    </div>
+  </div>
+  
+  <div class="w3-dropdown-hover">&nbsp &nbsp  &nbsp WWEMS
+    <div class="w3-dropdown-content w3-card-4" style="width:250px">
+      <img src="img_tokyo.jpg" alt="WWEMS" style="width:100%">
+      <div class="w3-container">
+      <h6>WWEMS</h6>
+      <p>Home of Western Wall’s Equestrian Academy.
+      <br>
+      Acquire expertise in caring for, training and showing horses.			  
+      <br>
+      Learn business skills through stable and ranch management.
+      <br>
+      Pride in achievement and accomplishment!<p/>
+      </div>
+    </div>
+  </div>
+
+</div>
+ <div class="w3-dropdown-hover">&nbsp &nbsp WWFAMS
+    <div class="w3-dropdown-content w3-card-4" style="width:250px">
+      <img src="img_tokyo.jpg" alt="WWFAMS" style="width:100%">
+      <div class="w3-container">
+      <h6>WWFAMS</h6>
+      <p>The only Fine Arts Middle School in the Western Wall District.
+      <br>
+      Students explore the world of fine arts and acquire expertise in their chosen major area
+      <br>
+      Auditions, Competitions, Performances, Showcases, A Spirit of Excellence!<p/>
+      </div>
+    </div>
+  </div>
+
+
 
 
     <!--and a drop down selector for which school you want your child to be on the waiting list. 
