@@ -11,7 +11,7 @@
     </head>
     <h1>Welcome to Western Wall School District</h1>
     <h2>Middle School Academies</h2>
-    <h3>Please enter responses on this form to have your child included on our waitlist.</h3>
+    <h3>Enter your student's information to be added to our waitlist.</h3>
 
 
     <!--Relevant demographic information, name, age, gender, upcoming grade,-->
@@ -25,27 +25,54 @@
                 <!--Name-->
 
             </li>
-           <p>Child's grade in the upcoming school year:</p>
-            
-          
-            
-        
+            <br>
 
-            <li>
-                <label for="mail">E-mail:</label>
-                <!--email address-->
-                <input type="email" id="mail" name="user_mail">
-            </li>
-            <li>
-                <label for="msg">Message:</label>
-                <textarea id="msg" name="user_message"></textarea>
-            </li>
+
+            <form action="/action_page.php">
+                <label for="grade">Grade:</label>
+                <select id="grade" name="grade">
+                    <option value="select">select</option>
+                    <option value="6th">6th</option>
+                    <option value="7th">7th</option>
+                    <option value="8th">8th</option>
+                </select>
+                <form action="/action_page.php">
+                    <label for="age">Age:</label>
+                    <select id="age" name="age">
+                        <option value="select">select</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                    </select>
+                    <form action="/action_page.php">
+                        <label for="gender">Gender:</label>
+                        <select id="gender" name="gender">
+                            <option value="select">select</option>
+                            <option value="female">female</option>
+                            <option value="male">male</option>
+                            <option value="other">other</option>
+
+                        </select>
+
+                        <li>
+                            <br>
+                            <label for="mail">E-mail:</label>
+                            <!--email address-->
+                            <input type="email" id="mail" name="user_mail">
+                        </li>
+                        <!-- <li>
+                        <label for="msg">Message:</label>
+                        <textarea id="msg" name="user_message"></textarea>
+                    </li>-->
+
         </ul>
 
-        <li class="button">
+        <div class="button">
             <button type="submit">Submit Form</button>
             <!--******change button type to button for creatie button style.-->
-        </li>
+        </div>
 
     </form>
 
@@ -67,7 +94,7 @@ See rubric.
 10 points EXTRA credit for adding a web service and server side listener (Node or PHP).  This is completely optional and only recommended for those of you who want to start learning the server-side coding-->
 
 
-<!--drop down spacing problems-------<p> <input type="radio" name="size" id="grade_6" value="6th"> <label for="grade_6">6th Grade</label> </p>
+    <!--drop down spacing problems-------<p> <input type="radio" name="size" id="grade_6" value="6th"> <label for="grade_6">6th Grade</label> </p>
 <p> <input type="radio" name="size" id="grade_7" value="7th"> <label for="grade_7">7th Grade</label> </p>
 <p> <input type="radio" name="size" id="grade_8" value="8th"> <label for="grade_8">8th Grade</label> </p>-->
 

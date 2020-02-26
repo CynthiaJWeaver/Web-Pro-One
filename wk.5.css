@@ -7,15 +7,10 @@ body {
         text-align: center;
         font-family: Arial, Helvetica, sans-serif;
         
-
     }
-    label {
-        margin-left: 0;
-    }
-    input[type="radio"] {
-        margin-right: 0;
-    }
-/*css originally copied from developer.mozilla.org. *reworked and personalized for current project*/
+    
+    
+/*css originally from developer.mozilla.org. *reworked and personalized for current project*/
 form {
     /* Center the form on the page */
     margin: 0 auto;
@@ -80,4 +75,13 @@ form {
     /* This extra margin represent roughly the same space as the space
        between the labels and their text fields */
     margin-left: .5em;
+  }
+
+  .dropbtn {
+    background-color: #3498DB;
+    color: midnightblue;
+    padding:5px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
   }
