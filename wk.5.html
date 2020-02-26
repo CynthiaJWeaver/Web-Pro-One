@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>wk.5 Web Form</title>
         <link rel="stylesheet" type="text/css" href="wk.5.css">
+        <link rel="stylesheet" type="text/css" href="wk.5abutton.css">
     </head>
     <h1>Welcome to Western Wall School District</h1>
     <h2>Middle School Academies</h2>
@@ -67,24 +68,25 @@
 
         </ul>
         <br>
-        <div class="choice">
-            <strong>Indicate your #1 school preference: </strong>
-            <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn"><strong>choose one</strong></button>
-            </div>
+      
+            <p><strong>Indicate your #1 school preference: </strong>
+            <div class="dropdown"> <!--button for school choices-->
+                <button onclick="myFunction()" class="dropbtn"><strong>Choice School</strong></button> <!--name dropdown Choice School--> </p>
                 <div id="myDropdown" class="dropdown-content">
+                    <option value="wwcams">WWCAMS</option>
+                    <option value="wwems">WWEMS</option>
+                    <option value="wwfams">WWFAMS</option>
+                </div> 
+                <script src="wk.5.js"></script> <!--js for drop down-->
+                
+        </ul>
 
-                </div>
-                <script src="wk.5a.css"></script>
-            
-            </div>
-                </ul>
-
-                <div class="button">
-                    <button type="submit">Submit Form</button>
-                    <!--******change button type to button for creative button style.-->
-                </div>
-
+        <div class="button">
+            <button type="submit">Submit Form</button>
+            <!--******change button type to button for creative button style.-->
+        </div>
+        <script src="wk.5.js"></script>
+        <!--js for drop down-->
 
     </form>
 
@@ -97,18 +99,15 @@ Each button should have an event handler (for instance, <input type="button" nam
 
 The form should css styled in an attractive manner, via a linked to css file (of your own creation)  or with Bootstrap.
 
-Please comment your code.
 
-See rubric.
+
 
 5 points EXTRA credit for using html mailto to forward info (super easy).
 
 10 points EXTRA credit for adding a web service and server side listener (Node or PHP).  This is completely optional and only recommended for those of you who want to start learning the server-side coding-->
 
 
-    <!--drop down spacing problems-------<p> <input type="radio" name="size" id="grade_6" value="6th"> <label for="grade_6">6th Grade</label> </p>
-<p> <input type="radio" name="size" id="grade_7" value="7th"> <label for="grade_7">7th Grade</label> </p>
-<p> <input type="radio" name="size" id="grade_8" value="8th"> <label for="grade_8">8th Grade</label> </p>-->
+ 
 
 
 </body>

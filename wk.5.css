@@ -8,6 +8,10 @@ body {
         font-family: Arial, Helvetica, sans-serif;
         
     }
+    p {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: x-large;
+    }
     
     
 /*css originally from developer.mozilla.org. *reworked and personalized for current project*/
@@ -32,19 +36,18 @@ form {
   }
   
   label {
-    /* Uniform size & alignment */
+    /* size & alignment */
     display: inline-block;
     width: 90px;
     text-align: right;
   }
   
-  input, 
+input, 
   textarea {
-    /* To make sure that all text fields have the same font settings
-       By default, textareas have a monospace font */
-    font: 1em sans-serif;
+    /* font settings */
+    font: 2em sans-serif;
   
-    /* Uniform text field size */
+    /* size */
     width: 300px;
     box-sizing: border-box;
   
@@ -52,34 +55,21 @@ form {
     border: 1px solid #999;
   }
   
-  input:focus, 
-  textarea:focus {
-    /* Additional highlight for focused elements */
-    border-color: #000;
-  }
+
   
-  textarea {
-    /* Align multiline text fields with their labels */
-    vertical-align: top;
-  
-    /* Provide space to type some text */
-    height: 5em;
+  button {
+    
+    ruby-align: center; 
   }
   
   .button {
-    /* Align buttons with the text fields */
-    padding-left: 90px; /* same size as the label elements */
-  }
-  
-  button {
-    /* This extra margin represent roughly the same space as the space
-       between the labels and their text fields */
-margin: auto;
+    
+justify-content: center;
   }
 
   .dropbtn {
     background-color: #3498DB;
-    color: midnightblue;
+    color: rgb(20, 89, 153);
     padding:5px;
     font-size: 20px;
     border: none;
