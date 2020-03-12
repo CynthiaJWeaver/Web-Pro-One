@@ -2,12 +2,16 @@ body {
 background-color: oldlace;
 }
 #container {
-    margin-top: 5%;
+    margin-top: 1%;
     margin-left: 25%;
-    margin-right: 25%;
+    margin-right: 35%;
     background-color: oldlace;
 }
 #output{
     margin-top: 1%;
     text-align: center;
+}
+#heading {
+    margin-top: 1%;
+    margin-left: 5%;
 }

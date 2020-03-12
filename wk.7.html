@@ -14,16 +14,27 @@
 </head>
 
 <body>
+  <div id="heading">
+    <h6>Web Programming 1</h6>
+    <h6>Cynthia Weaver</h6>
+  </div>
 
   <div id="container">
-    <h1>Organizational Materials Checklist</h1>
-    <h2>Learning Strategies Class</h2>
-    <h3>Cynthia Weaver</h3>
-    <form id="myForm">
+    <h3>Organizational Supplies Checklist</h3>
+    <h6>Learning Strategies Class</h6>
 
-      <div class="form-group">
-        <label for="name">Type your first and last name.</label>
-        <input type="text" class="form-control" id="name">
+    <form id="myForm">
+      <!--need for assisstance-->
+      <strong><h5>Check beside the option that describes your needs.</h5></strong>
+      <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="need">
+        <label class="form-check-label" for="need">I need assistance with obtaining supplies this school year.</label>
+      </div>
+
+      <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="noNeed">
+        <label class="form-check-label" for="noNeed">I do not need assistance with obtaining supplies this school
+          year.</label>
       </div>
       <div class="form-group">
         <label for="grade">Select your grade level.</label>
@@ -35,8 +46,8 @@
 
         </select>
       </div>
-      <h6>Check the box if the answer is "Yes."</h6>
-      <h4>Do I have...</h4>
+      <h5>Check the box if the answer is <strong> "Yes." </strong></h5>
+      <h5>Do I have...</strong></h5>
 
       <div class="form-group form-check">
         <input type="checkbox" class="form-check-input" id="binder">
@@ -45,34 +56,32 @@
 
       <div class="form-group form-check">
         <input type="checkbox" class="form-check-input" id="notebook">
-        <label class="form-check-label" for="notebook">a separate notebook or a separate section for each class?</label>
+        <label class="form-check-label" for="notebook">a composition notebook?</label>
       </div>
 
       <div class="form-group form-check">
         <input type="checkbox" class="form-check-input" id="agenda">
-        <label class="form-check-label" for="agenda">a place to record assignments and due dates</label>
+        <label class="form-check-label" for="agenda">a place to record assignments and due dates?</label>
       </div>
 
       <div class="form-group form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        <input type="checkbox" class="form-check-input" id="dividers">
+        <label class="form-check-label" for="dividers">a place to keep handouts and homework that must be handed
+          in?</label>
       </div>
 
       <div class="form-group form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        <input type="checkbox" class="form-check-input" id="paper">
+        <label class="form-check-label" for="paper">blank paper for classwork and notes?</label>
       </div>
 
       <div class="form-group form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        <input type="checkbox" class="form-check-input" id="folder">
+        <label class="form-check-label" for="folder">a place to keep returned homework and tests?</label>
       </div>
 
-      <div class="form-group form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
+
+      <button type="button" class="btn btn-primary">Submit</button>
     </form>
 
     <!-- Optional JavaScript -->
