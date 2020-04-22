@@ -1,6 +1,6 @@
-//function is to process the teacher selection
+//function is to process the teacher selection by user
 function process_select(obj) {
-    console.log(obj.value);
+    //console.log(obj.value);
 
 var teacher_idx = obj.value;
 var msg = "";
@@ -20,3 +20,4 @@ if (teacher_idx == 0) {
 }
 document.getElementById("output").innerHTML = msg;
 }
+
