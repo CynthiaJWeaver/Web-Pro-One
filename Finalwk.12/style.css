@@ -1,16 +1,23 @@
 h1 {
     text-align: center;
-    margin-top: 10%;
+    margin-top: 5%;
     margin-left: 10%;
     margin-right: 10%;
     }
 #container {
 text-align: center;
-margin-top: 10%;
+margin-top: 5%;
 margin-left: 10%;
 margin-right: 10%;
-background-color: papayawhip;
+background-color: aquamarine;
 }
+#container2 {
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color:lavender;
+    }
 body {
     background-color: papayawhip;
 }
