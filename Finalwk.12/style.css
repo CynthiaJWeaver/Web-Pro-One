@@ -1,6 +1,16 @@
+h1 {
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    }
 #container {
 text-align: center;
 margin-top: 10%;
 margin-left: 10%;
 margin-right: 10%;
+background-color: papayawhip;
+}
+body {
+    background-color: papayawhip;
 }
