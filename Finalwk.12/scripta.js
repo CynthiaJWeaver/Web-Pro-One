@@ -29,7 +29,7 @@ var link = "";
 if (platform_idx == 0) {
     link = "Please select a Learning Platform.";
 } else if (platform_idx == a) {
-    link = "";
+    link = "<a href=https://www.youtube.com/watch?v=4hOfZrQGCIE>Edgenuity</a>";
 } else if (platform_idx == b) {
     link = "";
 } else if (platform_idx == c) {
@@ -39,5 +39,5 @@ if (platform_idx == 0) {
 }else if (platform_idx == e) {
     link = "";
 }
-document.getElementById("output").innerHTML = msg;
+document.getElementById("output").innerHTML = link;
 }
