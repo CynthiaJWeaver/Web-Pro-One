@@ -8,7 +8,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="wk.7.js"></script>
+  <script src="wk.7.js"></script>
   <title>Week 7</title>
   <link rel="stylesheet" href="wk.7.css">
 </head>
@@ -21,11 +21,13 @@
 
   <div id="container">
     <h3>Organizational Supplies Checklist</h3>
-    <h6>Learning Strategies Class</h6>
+    <h6>Learning Strategies</h6>
 
     <form id="my_form">
       <!--need for assisstance?-->
-      <strong><h5>Check beside the option that describes your needs.</h5></strong>
+      <strong>
+        <h5>Check beside the option that describes your needs.</h5>
+      </strong>
       <div class="form-group form-check">
         <input type="checkbox" class="form-check-input" id="need">
         <label class="form-check-label" for="need">I need assistance with obtaining supplies this school year.</label>
@@ -47,8 +49,7 @@
 
         </select>
       </div>
-      <h5>Check the box if the answer is <strong> "Yes." </strong></h5>
-      <h5>Do I have...</strong></h5>
+      <h5>Check the box beside each item you need.</h5>
 
       <div class="form-group form-check">
         <input type="checkbox" class="form-check-input" id="binder">
@@ -82,7 +83,9 @@
       </div>
 
 
-      <button type="button" class="btn btn-primary">Submit</button>
+      <button type="button" class="btn btn-primary" onclick="process_form()">Submit</button>
+      <div id="output"></div>
+      <script src="wk.7.js"></script>
     </form>
 
     <!-- Optional JavaScript -->
