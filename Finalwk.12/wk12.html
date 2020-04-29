@@ -18,19 +18,23 @@
 
 <body>
     <h1>Rochelle School of the Arts 7th Grade Distance Learning</h1>
-   <div id="assignments">
-      <h4>Welcome to our Distance Learning Adventure! <br>
-    Click the button below to see an overview of your assignments this week</h4> 
-    <h5>Note: Updated each Monday before 8:00 AM</h5>
-    <a class="btn btn-warning btn-lg btn-block" href="https://1drv.ms/w/s!ArQnHkXDVxUUgbQZjiIreoDmlp_CpA?e=Cug0lf" role="button">7th Grade Assignments April 27 - May 1</a>
-   </div> 
+    <div id="assignments">
+        <h4>Welcome to our Distance Learning Adventure! <br>
+            Click the button below to see an overview of your assignments this week</h4>
+        <h5>Note: Updated each Monday before 8:00 AM</h5>
+        <!--bootstrap button block for assignment overview link-->
+        <a class="btn btn-warning btn-lg btn-block" href="https://1drv.ms/w/s!ArQnHkXDVxUUgbQZjiIreoDmlp_CpA?e=Cug0lf"
+            role="button">7th Grade Assignments</a>
+    </div>
+
+    <!--teacher's chosen learning platforms and links to tutorials-->
     <div id="container">
         <div id="container">
             <div class="form-group">
                 <label for="sel1">
-                    <h6>Select a teacher's name to see which learning platforms they are using.
-                    <br>
-                    Click on a learning platform to watch a video tutorial.</h6>
+                    <h6>Select a teacher's name to see their learning platforms.
+                        <br>
+                        Click on a learning platform to watch a video tutorial.</h6>
                 </label>
                 <select class="form-control" id="sel1" onchange="process_select(this)">
                     <option value="0">Please Select a Teacher's Name</option>
@@ -46,7 +50,34 @@
             </div>
         </div>
     </div>
+<!--borrowed this idea at first from a "how to" on geeksforgeeks.org. 
+    changed and revised for my needs***edit: I could not make this function as needed. Changed to using Html and js-->
+    <div id="container2"> 
+        <h4>Need more help with the learning platforms?</h4> 
+<p>Check the boxes to get links to more resources. 
+    <br>
+    Right click and open in a new tab to download the resources.
+</p>
+</p> 
 
+
+Edgenuity: <input type="checkbox" id="edgenuity"  onclick="myFunction()">
+Microsoft Teams: <input type="checkbox" id="teams"  onclick="myFunction()">
+Khan Academy: <input type="checkbox" id="khan"  onclick="myFunction()">
+Google Classroom: <input type="checkbox" id="classroom"  onclick="myFunction()">
+
+<p id="text1" style="display:none"><a href=https://www.edgenuity.com/wp-content/uploads/2017/01/Edgenuity-Student-Manual.pdf>Edgenuity Student Manual</a></p>
+<p id="text2" style="display:none"><a href=https://pulse.microsoft.com/uploads/prod/2020/03/Microsoft_Teams_Quickstart.pdf>Microsoft Teams Quick Start Guide</a></p>
+<p id="text3" style="display:none"><a href=https://www.khanacademy.org/resources/students>Khan Academy Resources for Students</a></p>
+<p id="text4" style="display:none"><a href=http://www.du.ac.in/du/uploads/Google_Classroom_UserGuide.pdf>Google Classroom User Manual</a></p>
+ 
+<br>
+<br> 
+
+
+</p>  
+
+</div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

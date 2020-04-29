@@ -30,4 +30,36 @@ if (teacher_idx == 0) {
 }
 document.getElementById("output").innerHTML = msg;
 }
+function myFunction() {
+    var checkBox = document.getElementById("edgenuity");
+    var text = document.getElementById("text1");
+    if (checkBox.checked == true){
+      text.style.display = "block";
+    } else {
+       text.style.display = "none";
 
+    }
+    var checkBox = document.getElementById("teams");
+    var text = document.getElementById("text2");
+    if (checkBox.checked == true){
+      text.style.display = "block";
+    } else {
+       text.style.display = "none";
+       
+    }
+    var checkBox = document.getElementById("khan");
+    var text = document.getElementById("text3");
+    if (checkBox.checked == true){
+      text.style.display = "block";
+    } else {
+       text.style.display = "none";
+              
+    }
+    var checkBox = document.getElementById("classroom");
+    var text = document.getElementById("text4");
+    if (checkBox.checked == true){
+      text.style.display = "block";
+    } else {
+       text.style.display = "none";
+  }
+}
