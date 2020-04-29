@@ -1,4 +1,6 @@
 //function is to process the teacher selection by user
+
+
 function process_select(obj) {
     //console.log(obj.value);
 
@@ -8,15 +10,23 @@ var msg = "";
 if (teacher_idx == 0) {
     msg = "Please select a Teacher's name.";
 } else if (teacher_idx == 1) {
-    msg = "Mrs. Lamb is using Google Classroom, Microsoft Teams, and Achieve3000.";
+    msg = "<a href=https://www.youtube.com/watch?time_continue=19&v=nkkxzRQS9dI&feature=emb_logo>Google Classroom</a>" + ";" +
+    " <a href=https://www.youtube.com/watch?v=x2m_Z3zfUjg&feature=emb_logo>Microsoft Teams</a>";
 } else if (teacher_idx == 2) {
-    msg = "Mrs. Miller is using Google Classroom, Microsoft Teams, Outlook Student Email, and Edgenuity.";
+    msg = "<a href=https://www.youtube.com/watch?v=4hOfZrQGCIE>Edgenuity</a>" + ";" +
+    " <a href=https://www.youtube.com/watch?v=WfSCfBntqPU>Microsoft Outlook</a>" + ";" + 
+    " <a href=https://www.youtube.com/watch?time_continue=19&v=nkkxzRQS9dI&feature=emb_logo>Google Classroom</a>" + ";" +
+    " <a href=https://www.youtube.com/watch?v=x2m_Z3zfUjg&feature=emb_logo>Microsoft Teams</a>";
 } else if (teacher_idx == 3) {
-    msg = "Mrs. Perez is using Microsoft Teams.";
+    msg =  "<a href=hhttps://www.youtube.com/watch?v=x2m_Z3zfUjg&feature=emb_logo>Microsoft Teams</a>";
 } else if (teacher_idx == 4) {
-    msg = "Dr. Spaulding is using Google Classroom, Microsoft Teams, Outlook Student Email, and Kahn Academy.";
+    msg = "<a href=https://www.youtube.com/watch?v=vOU2WbU8URg >Khan Academy</a>" + ";" +
+    " <a href=https://www.youtube.com/watch?v=WfSCfBntqPU>Microsoft Outlook</a>" + ";" + 
+    " <a href=https://www.youtube.com/watch?time_continue=19&v=nkkxzRQS9dI&feature=emb_logo>Google Classroom</a>" + ";" +
+    " <a href=https://www.youtube.com/watch?v=x2m_Z3zfUjg&feature=emb_logo>Microsoft Teams</a>";
 }else if (teacher_idx == 5) {
-    msg = "Mrs. Williams is using Outlook Student Email, and Floridastudents.org.";
+    msg = "<a href=https://www.youtube.com/watch?v=vOU2WbU8URg >Khan Academy</a>" + ";" +
+    " <a href=https://www.cpalms.org/page786.aspx>Floridastudents.org</a>";
 }
 document.getElementById("output").innerHTML = msg;
 }
