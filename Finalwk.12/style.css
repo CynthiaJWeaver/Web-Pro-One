@@ -36,6 +36,24 @@ background-color: aquamarine;
     margin-right: 10%;
     background-color:lavender;
     }
+#container3 {
+        
+
+  background-color: aquamarine; 
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px;
+}
+    
+
+
 body {
     background-color: papayawhip;
 
