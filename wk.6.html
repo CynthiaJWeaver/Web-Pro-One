@@ -13,6 +13,7 @@
         <!--links for external files: javascript and css-->
         <link rel="stylesheet" type="text/css" href="wk.6.css">
         <script src="wk.6.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     </head>
 
     <!--introduction with image-->
@@ -48,7 +49,36 @@
         <button type="button" class="btn btn-secondary"value="benchmark">.3</button>
     </div>
 
+    <div id="scheme" class="alert alert-warn alert-block fade">
+        <button type="button" class="close">&times;
+        <h2> Subject</h2>
+        <p>The first section of the standard indicates the subject. For example: ELA - English Language Arts; MA - Mathmetics</p></button>
+
+    </div>
+
 </div>
+<br>
+<div>
+<button id="btnSubmit" class="btn btn-primary">Submit</button>
+<br> 
+<br>
+<div id="myAlert"class="alert alert-danger collapse">
+<a href="#" class="close" data-dismiss="alert">&times;</div></a>
+<strong>Error!</strong>There is a problem submitting your form.
+</div>
+</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function () {
+    $("#btnSubmit").click(function () {
+
+  $("#myAlert").show ("fade");
+  });
+
+});</script>
+
+</script>
+</body>
 
 </body>
 
