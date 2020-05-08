@@ -9,5 +9,18 @@ margin-block-end: auto;
 margin-right: 10%;
 justify-self: center;
 }
+p {
+    font-size: larger;
+}
+/*style container for standards code scheme*/ 
+.container {
+    text-align: left; 
+    margin-left: 10%;
+  
+
+    }    
+.btn {
+    font-size: xx-large;
+}
 
   
