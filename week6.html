@@ -1,0 +1,106 @@
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Weaver Week 6</title>
+    <script src="week6.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4">
+                <div class="form-group">
+                    <label for="standardSelector">Example select</label>
+                    <select class="form-control" id="standardSelector" onchange="displayStandard()">
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <label for="codeDisplay">Code</label>
+                <input id="codeDisplay" disabled></input>
+            </div>
+            <div class="col-4">
+                <label for="gradeDisplay">Grade</label>
+                <input id="gradeDisplay" disabled></input>
+            </div>
+            <div class="col-4">
+                <label for="descDisplay">Description</label>
+                <input id="descDisplay" disabled></input>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-4">
+                <label for="exampleDisplay">Example</label>
+                <input id="exampleDisplay" disabled></input>
+            </div>
+            <div class="col-4">
+                <label for="cognitiveLevelDisplay" class="">Cog. Level</label>
+                <input id="cognitiveLevelDisplay" disabled></input>
+            </div>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div class="container">
+        <!---The properties your object should include the code (for instance MAFS.6.RP.1.1), grade level (6), 
+            description of standard (e.g., "Understand the concept of a ratio and use ratio
+             language to describe a ratio relationship between two quantities."), example o
+             f standard( “For every vote candidate A received, candidate C received nearly three votes.”)
+              and Cognitive complexity level (e.g., Level 2: Basic Application of Skills & Concepts),
+               and any other properties you want to includ-->
+               <div class="row">
+                   <div class="col-4"></div>
+                   <div class="col-4">
+                       <h3>Enter a New Standard</h1>
+                   </div>
+               </div>
+               <br>
+        <form id="standardForm">
+            <div class="row">
+                <div class="col-4">
+                    <label for="codeInput">Code</label>
+                    <input id=codeInput></input>
+                </div>
+                <div class="col-4">
+                    <label for="gradeInput">Grade</label>
+                    <input id="gradeInput"></input>
+                </div>
+                <div class="col-4">
+                    <label for="descInput">Description</label>
+                    <input id="descInput"></input>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-4">
+                    <label for="exampleInput">Example</label>
+                    <input id="exampleInput"></input>
+                </div>
+                <div class="col-4">
+                    <label for="cognitiveLevelInput" class="">Cog. Level</label>
+                    <input id="cognitiveLevelInput"></input>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10"></div>
+                <div class="col-2">
+                    <button type="button" onclick="addCustomStandard()">Add Standard</button>
+                </div>
+            </form>
+        </form>
+    </div>
+</body>

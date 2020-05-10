@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en"><p>No markup shown as popovers are generated from JavaScript and content within a <code>data</code> attribute.</p>
+<body>
+    <head>
+    <script> src= "https://bootstrapdocs.com/v2.2.2/docs/assets/js/bootstrap-tooltip.js" </script>
+    <script> src= "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" </script>
+    </head>
+    <h3>Live demo</h3>
+
+<script>$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })</script>
+  <script>$('#example').tooltip(options)</script>
+  <script> $('#element').tooltip('show')</script>
+  <script>$('#element').tooltip('toggle')</script>
+  <script>$('#element').tooltip('toggleEnabled')</script>
+
+<div class="bs-docs-example" style="padding-bottom: 24px;">
+    <a href="#" class="btn btn-large btn-danger" rel="popover" data-content="And here's some amazing content. It's very engaging. right?" 
+    data-original-title="A Title">Click to toggle popover</a>
+    ::after
+  </div>
+  <h4>Four directions</h4>
+  <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+    Tooltip on top
+  </button>
+  <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip on right">
+    Tooltip on right
+  </button>
+  <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+    Tooltip on bottom
+  </button>
+  <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
+    Tooltip on left
+  </button>
+
+  <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">
+    Tooltip with HTML
+  </button>
+
+  <!-- HTML to write -->
+<a href="#" data-toggle="tooltip" title="Some tooltip text!">Hover over me</a>
+
+<!-- Generated markup by the plugin -->
+<div class="tooltip bs-tooltip-top" role="tooltip">
+  <div class="arrow"></div>
+  <div class="tooltip-inner">
+    Some tooltip text!
+  </div>
+  
+</div>
+</body>
+  </html>

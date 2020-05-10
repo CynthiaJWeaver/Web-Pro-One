@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(180, 219, 235);
+}
+.media {
+margin-top: 05%;
+text-align: left;
+margin-left: 10%;
+margin-block-end: auto;
+margin-right: 10%;
+justify-self: center;
+}
+p {
+    font-size: larger;
+}
+/*style container for standards code scheme*/ 
+.container {
+    text-align: left; 
+    margin-left: 10%;
+  
+
+    }    
+.btn {
+    font-size: xx-large;
+}
+
+  
+#scheme {
+
+   font-size: larger; 
+}
+p {
+    text-align: left;
+}
+h2 {
+    text-align: left;
+}
