@@ -54,7 +54,6 @@ function addCustomStandard() {
     //add the custom standard to the standardsSelector
     let sel = document.getElementById('standardSelector');
     let standard = document.createElement('option');
-    console.log(newStandard);
     standard.appendChild(document.createTextNode(newStandard.code));
     standard.value = standards.length - 1;
     sel.appendChild(standard);
