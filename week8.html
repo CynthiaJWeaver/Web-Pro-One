@@ -2,10 +2,8 @@
 <html lang="en">
 
 <head>
-    <!--Lines 42 through 140 are  same code from Assignment 6 with minor changes for clarity and visual appeal. 
-        *Added for week 8: an intorduction with a logo for visual appeal,
-    an array for information about who adds to the standards selector and which standard they added-->
-
+    <!--Some of this code is from Assignment 6 with changes for clarity and visual appeal. 
+     an intorduction with a logo for visual appeal, arrays.-->
     <!-- Required meta tags for responsive page-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -28,7 +26,7 @@
 <body>
     <br><br>
 
-    <!--introduction with image - This introduces the new BEST standards with a short explanation of the middle school ELA learning band.-->
+    <!--introduction with image - Part of week 8 assignment: This introduces the new BEST standards with a short explanation of the middle school ELA learning band.-->
     <div class="media">
         <img src="images\FL BEST logo sized.jpg" alt="FL Best">
         <!--logo added from Creative Commons-->
@@ -40,112 +38,115 @@
                 go from explaining theme to analyzing it. Students are also being introduced to literature from historic
                 time
                 periods. </p>
-            <hr>
-            <p>Select an ELA standard from the dropdown menu to view a description and corresponding literature.</p>
+        </div>
+    </div>
+    <hr>
 
-            <div class="container">
-                <!--dropdown for standard selector-->
-                <div class="row">
-                    <div class="col-4"></div>
-                    <!--4-column wide divs using bootstrap column grids-->
-                    <div class="col-4">
-                        <div class="form-group">
-                            <h4><label for="standardSelector">Select ELA Ex. Standard</label></h4> 
-                            <!--change to reflect that the standards in the selector are ELA only -->
-                            <select class="form-control" id="standardSelector" onchange="displayStandard()">
-                            </select>
-                        </div>
-                    </div>
+    <div class="container">
+        <h6>Select an ELA standard from the dropdown menu to view a description and corresponding literature.</h6>
+        <!--dropdown for standard selector-->
+        <div class="row">
+            <div class="col-4"></div>
+            <!--4-column wide divs using bootstrap column grids-->
+            <div class="col-4">
+                <div class="form-group">
+                    <h4><label for="standardSelector">Select ELA Ex. Standard</label></h4>
+                    <!--change to reflect that the standards in the selector are ELA only -->
+                    <select class="form-control" id="standardSelector" onchange="displayStandard()">
+                    </select>
                 </div>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-4">
-                        <label for="codeDisplay">Code</label>
-                        <input id="codeDisplay" disabled></input>
-                        <!--user input disabled for form fields using *disabled-->
-                    </div>
-                    <div class="col-4">
-                        <label for="gradeDisplay">Grade</label>
-                        <input id="gradeDisplay" disabled></input>
-                    </div>
-                    <div class="col-4">
-                        <label for="cognitiveLevelDisplay" class="">Cognitive Lvl</label>
-                        <input id="cognitiveLevelDisplay" disabled></input>
-                        <br>
-                    </div>
-                </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <label for="codeDisplay">Code</label>
+                <input id="codeDisplay" disabled></input>
+                <!--user input disabled for form fields using *disabled-->
+            </div>
+            <div class="col-4">
+                <label for="gradeDisplay">Grade</label>
+                <input id="gradeDisplay" disabled></input>
+            </div>
+            <div class="col-4">
+                <label for="cognitiveLevelDisplay" class="">Cognitive Lvl</label>
+                <input id="cognitiveLevelDisplay" disabled></input>
                 <br>
-                <div class="row">
-                    <div class="col-4">
-                        <!--text area for standard description added using bootstrap.-->
-                        <div class="form-group">
-                            <label for="descDisplay">Description of Standard</label>
-                            <textarea class="form-control" id="descDisplay" disabled rows="3"></textarea>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <!--text area for standard example added using bootstrap.-->
-                        <div class="form-group">
-                            <label for="exampleDisplay">Literature Example</label>
-                            <textarea class="form-control" id="exampleDisplay" disabled rows="3"></textarea>
-                        </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-4">
+                <!--text area for standard description added using bootstrap.-->
+                <div class="form-group">
+                    <label for="descDisplay">Description of Standard</label>
+                    <textarea class="form-control" id="descDisplay" disabled rows="3"></textarea>
+                </div>
+            </div>
+            <div class="col-4">
+                <!--text area for standard example added using bootstrap.-->
+                <div class="form-group">
+                    <label for="exampleDisplay">Literature Example</label>
+                    <textarea class="form-control" id="exampleDisplay" disabled rows="3"></textarea>
+                </div>
 
-                    </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div class="container">
+        <h6>Use the form below to add an ELA standard and it's information to the above Standards Selector. <br>
+            Remember to check that the standard you are adding is not already in the above selector menu.</h6>
+        <!--added for clarification.-->
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4">
+                <h4>Enter an ELA Standard</h4>
+                <!--changed to request only ELA standards-->
+            </div>
+        </div>
+        <br>
+        <form id="standardForm">
+            <div class="row">
+                <div class="col-4">
+                    <label for="codeInput">Code</label>
+                    <input id=codeInput></input>
+                </div>
+                <div class="col-4">
+                    <label for="gradeInput">Grade</label>
+                    <input id="gradeInput"></input>
+                </div>
+                <div class="col-4">
+                    <label for="descInput">Description</label>
+                    <input id="descInput"></input>
                 </div>
             </div>
             <br>
-            <hr>
-            <br>
-            <div class="container">
-                <h6>Use the form below to add an ELA standard and it's information to the above Standards Selector.</h6>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-4"></div>
-                    <div class="col-4">
-                        <h4>Enter an ELA Standard</h4> <!--changed to request only ELA standards-->
-                    </div>
+            <div class="row">
+                <div class="col-4">
+                    <label for="exampleInput">Example</label>
+                    <input id="exampleInput"></input>
                 </div>
-                <br>
-                <form id="standardForm">
-                    <div class="row">
-                        <div class="col-4">
-                            <label for="codeInput">Code</label>
-                            <input id=codeInput></input>
-                        </div>
-                        <div class="col-4">
-                            <label for="gradeInput">Grade</label>
-                            <input id="gradeInput"></input>
-                        </div>
-                        <div class="col-4">
-                            <label for="descInput">Description</label>
-                            <input id="descInput"></input>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="row">
-                        <div class="col-4">
-                            <label for="exampleInput">Example</label>
-                            <input id="exampleInput"></input>
-                        </div>
-                        <div class="col-4">
-                            <label for="cognitiveLevelInput" class="">Cog. Level</label>
-                            <input id="cognitiveLevelInput"></input>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-10"></div>
-                        <div class="col-2">
-                            <!--change button type to disable autosubmit-->
-                            <button type="button" onclick="addCustomStandard()">Add Standard</button>
-                        </div>
-
-                </form>
-                </form>
+                <div class="col-4">
+                    <label for="cognitiveLevelInput" class="">Cog. Level</label>
+                    <input id="cognitiveLevelInput"></input>
+                </div>
             </div>
-            <br><br>
-            <hr>
+            <div class="row">
+                <div class="col-10"></div>
+                <div class="col-2">
+                    <!--change button type to disable autosubmit-->
+                    <button type="button" onclick="addCustomStandard()">Add Standard</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
 </body>
 
 </html>

@@ -1,0 +1,32 @@
+<html>
+<head>
+<script type="text/javascript">
+    /*                       0            1             2      */
+    var fifthGraders = [ "john Adams", "julie S", "Edward Tuffty"];
+    
+    function showClass()
+    {
+       document.getElementById("demo").innerHTML = "Here is who is in the class " + fifthGraders; 
+        
+    }
+    
+      function addStudent()
+    {
+        //fifthGraders[fifthGraders.length] = prompt("Who is the new student");
+        fifthGraders.push(prompt("Who is the new student"));
+        showClass();        
+    }
+    
+  </script>
+</head>
+    <body onload="showClass()">
+    
+<p id="demo">  Here is where some text goes</p>
+        <br>
+<p id="demo2">Here is where some text goes</p>
+        
+<!--    <input type= "button"value="showClass"onClick ="showClass()" >-->
+     <input type= "button"value="addStudent"onClick ="addStudent()" >
+    </body>
+
+</html>
