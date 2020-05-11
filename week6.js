@@ -1,3 +1,4 @@
+//array of standards
 let standards = [{
         grade: 6,
         code: "ELA.6.R.1.1",
@@ -41,7 +42,7 @@ let standards = [{
         desc: 'Analyze two or more themes and their development throughout a literary text.'
     }
 ];
-
+//using let and for to loop
 let properties = ['code', 'grade', 'cognitiveLevel', 'desc', 'example'];
 
 window.onload = function () {
@@ -81,5 +82,6 @@ function addCustomStandard() {
     standard.appendChild(document.createTextNode(newStandard.code));
     standard.value = standards.length - 1;
     sel.appendChild(standard);
+
+//console.log
 }
-console.log
