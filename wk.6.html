@@ -1,58 +1,152 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<!--Week 6 assignmnet to write a webpage that holds objects to represent educational standards-->
+
+<head>
+    <!-- Required meta tags for responsive page-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap, js, and CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="week6.js"></script>
+    <link href="week6.css">
+    <title>CJWeaver Week 6</title>
+
+</head>
+<!---Assignment:The properties your object should include-- the code (for instance MAFS.6.RP.1.1), grade level (6), 
+            description of standard (e.g., "Understand the concept of a ratio and use ratio
+             language to describe a ratio relationship between two quantities."), example o
+             f standard( “For every vote candidate A received, candidate C received nearly three votes.”)
+              and Cognitive complexity level (e.g., Level 2: Basic Application of Skills & Concepts)-->
 
 <body>
-
-    <head>
-        <!-- Required meta tags to create responsive page-->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <!--tab title-->
-        <title>WK6 CJWeaver</title>
-        <!--links for external files: javascript and css-->
-        <link rel="stylesheet" type="text/css" href="wk.6.css">
-        <script src="wk.6.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    </head>
-
+    <br>
     <!--introduction with image-->
     <div class="media">
         <img src="images\FL BEST logo sized.jpg" alt="FL Best">
+        <!--logo added from Creative Commons-->
         <div class="media-body">
             <h1 class="mt-0">Florida's BEST Standards</h1>
             <h2>English Language Arts Grades 6-8</h2>
             <h5>Benchmarks For Excellent Student Thinking. (Adopted February 2020)</h5>
-            <p>In grades 6-8, analysis and writing are the primary foci. Rhetoric is introduced in 6th grade. In this
-                grade band, students go from explaining theme to analyzing it. Students progress from examining
-                character perspective to working with complex narrator types. Students are also being introduced to
-                literature
-                from historic time periods to help with building a body of knowledge useful in being able to interpret
-                multiple layers of meaning.</p>
+            <p>In grades 6-8, analysis and writing are of primary focus. Rhetoric is introduced in 6th grade. Students
+                go from
+                explaining theme to analyzing it. Students are also being introduced to literature from historic time
+                periods. </p>
+            <br>
+            <hr>
+            <p>Select an example standard for a description and recommended corresponding literature.</p>
         </div>
 
     </div>
-
-
-
-    <div class="container" id="scheme">
-        <!--heading for standards code scheme example-->
-        <h3>Understanding the BEST Standards Coding Scheme:</h3>
-        <!--button group to explain the standards code scheme-->
-        <!--using bootstrap, modified to add additional buttons, added alerts that can be closed or will fade to hidden after 3 seconds-->
-        <div class="container" id="scheme">
-            <div class="btn-group-btn-group-xxlg" role="group" aria-label="standardsExample">
-                <button type="button" class="btn btn-secondary" value="subject">ELA</button>
-                <button type="button" class="btn btn-secondary" value="grade">.6</button>
-                <button type="button" class="btn btn-secondary" value="strand">.R</button>
-                <button type="button" class="btn btn-secondary" value="standard">.1</button>
-                <button type="button" class="btn btn-secondary" value="benchmark">.3</button>
+    <br>
+    <div class="container">
+        <!--dropdown for standard selector-->
+        <div class="row">
+            <div class="col-4"></div>
+            <!--4-column wide divs using bootstrap column grids-->
+            <div class="col-4">
+                <div class="form-group">
+                    <h3><label for="standardSelector">Select Ex. Standard</label></h3>
+                    <select class="form-control" id="standardSelector" onchange="displayStandard()">
+                    </select>
+                </div>
             </div>
-
         </div>
-
     </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <label for="codeDisplay">Code</label>
+                <input id="codeDisplay" disabled></input>
+                <!--user input disabled for form fields using *disabled-->
+            </div>
+            <div class="col-4">
+                <label for="gradeDisplay">Grade</label>
+                <input id="gradeDisplay" disabled></input>
+            </div>
+            <div class="col-4">
+                <label for="cognitiveLevelDisplay" class="">Cognitive Lvl</label>
+                <input id="cognitiveLevelDisplay" disabled></input>
+                <br>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-5">
+                <!--text area for standard description added using bootstrap.-->
+                <div class="form-group">
+                    <label for="descDisplay">Description of Standard</label>
+                    <textarea class="form-control" id="descDisplay" disabled rows="3"></textarea>
+                </div>
+            </div>
+            <div class="col-5">
+                <!--text area for standard example added using bootstrap.-->
+                <div class="form-group">
+                    <label for="exampleDisplay">Example of Standard</label>
+                    <textarea class="form-control" id="exampleDisplay" disabled rows="3"></textarea>
+                </div>
 
+            </div>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div class="container">
+        <h6>Use the form below to add a standard and it's information to the above Standards Selector.</h6>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4">
+                <h3>Enter a New Standard</h3>
+            </div>
+        </div>
+        <br>
+        <form id="standardForm">
+            <div class="row">
+                <div class="col-4">
+                    <label for="codeInput">Code</label>
+                    <input id=codeInput></input>
+                </div>
+                <div class="col-4">
+                    <label for="gradeInput">Grade</label>
+                    <input id="gradeInput"></input>
+                </div>
+                <div class="col-4">
+                    <label for="cognitiveLevelDisplay" class="">Cognitive Lvl</label>
+                    <input id="cognitiveLevelDisplay"></input>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-4">
+                    <!--text area for standard description added using bootstrap.-->
+                    <div class="form-group">
+                        <label for="descDisplay">Description of Standard</label>
+                        <textarea class="form-control" id="descDisplay" rows="3"></textarea>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <!--text area for standard example added using bootstrap.-->
+                    <div class="form-group">
+                        <label for="exampleDisplay">Example of Standard</label>
+                        <textarea class="form-control" id="exampleDisplay" rows="3"></textarea>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10"></div>
+                <div class="col-2">
+                    <!--change button type to disable autosubmit-->
+                    <button type="button" onclick="addCustomStandard()">Add Standard</button>
+                </div>
+            </div>
+        </form>
+    </div>
 </body>
 
 </html>

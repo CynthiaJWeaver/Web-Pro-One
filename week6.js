@@ -58,3 +58,4 @@ function addCustomStandard() {
     standard.value = standards.length - 1;
     sel.appendChild(standard);
 }
+console.log
