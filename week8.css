@@ -6,8 +6,7 @@ h3 {
 
 h6 {
     color: midnightblue;
-    margin-left: 30%;
-    text-align: center;
+    m
 }
 
 body {
@@ -17,11 +16,23 @@ body {
 
 .media {
     text-align: left;
-    margin-left: 10%;
-    margin-right: 10%;
-    justify-self: center;
+    margin-left: 05%;
+    margin-right: 05%;
+    background-color: ;
+   
 }
 
 p {
     font-size: larger;
+}
+body {
+    background-color: rgb(169, 240, 233);
+}
+hr {
+    position: relative; 
+            top: 20px; 
+            border: none; 
+            height: 5px; 
+            background: midnightblue; 
+            margin-bottom: 50px; 
 }
