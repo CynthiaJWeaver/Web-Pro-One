@@ -1,22 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <!-- Required meta tags -->
+    <!-- Required meta tags for responsive page-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap, js, and CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <title>Weaver Week 6</title>
     <script src="week6.js"></script>
+    <link href="week6.css">
+    <title>CJWeaver Week 6</title>
 
 </head>
+<!---Assignment:The properties your object should include-- the code (for instance MAFS.6.RP.1.1), grade level (6), 
+            description of standard (e.g., "Understand the concept of a ratio and use ratio
+             language to describe a ratio relationship between two quantities."), example o
+             f standard( “For every vote candidate A received, candidate C received nearly three votes.”)
+              and Cognitive complexity level (e.g., Level 2: Basic Application of Skills & Concepts)-->
 
 <body>
+<br>
+       <!--introduction with image-->
+       <div class="media">
+        <img src="images\FL BEST logo sized.jpg" alt="FL Best"> <!--logo added from Creative Commons-->
+        <div class="media-body">
+            <h1 class="mt-0">Florida's BEST Standards</h1>
+            <h2>English Language Arts Grades 6-8</h2>
+            <h5>Benchmarks For Excellent Student Thinking. (Adopted February 2020)</h5>
+            <p>In grades 6-8, analysis and writing are of primary focus. Rhetoric is introduced in 6th grade. Students go from 
+                explaining theme to analyzing it. Students are also being introduced to literature from historic time periods. </p>
+                <br>
+                <hr>
+                <p>Select an example standard for a description and recommended corresponding literature.</p>
+        </div>
+
+    </div>
+    <br>
     <div class="container">
+        <!--dropdown for standard selector-->
         <div class="row">
             <div class="col-4"></div>
+            <!--4-column wide divs using bootstrap column grids-->
             <div class="col-4">
                 <div class="form-group">
-                    <label for="standardSelector">Example select</label>
+                    <h3><label for="standardSelector">Select Ex. Standard</label></h3>
                     <select class="form-control" id="standardSelector" onchange="displayStandard()">
                     </select>
                 </div>
@@ -28,25 +56,34 @@
             <div class="col-4">
                 <label for="codeDisplay">Code</label>
                 <input id="codeDisplay" disabled></input>
+                <!--user input disabled for form fields using *disabled-->
             </div>
             <div class="col-4">
                 <label for="gradeDisplay">Grade</label>
                 <input id="gradeDisplay" disabled></input>
             </div>
             <div class="col-4">
-                <label for="descDisplay">Description</label>
-                <input id="descDisplay" disabled></input>
+                <label for="cognitiveLevelDisplay" class="">Cognitive Lvl</label>
+                <input id="cognitiveLevelDisplay" disabled></input>
+                <br>
             </div>
         </div>
         <br>
         <div class="row">
-            <div class="col-4">
-                <label for="exampleDisplay">Example</label>
-                <input id="exampleDisplay" disabled></input>
+            <div class="col-5">
+                <!--text area for standard description added using bootstrap.-->
+                <div class="form-group">
+                    <label for="descDisplay">Description of Standard</label>
+                    <textarea class="form-control" id="descDisplay" disabled rows="3"></textarea>
+                </div>
             </div>
-            <div class="col-4">
-                <label for="cognitiveLevelDisplay" class="">Cog. Level</label>
-                <input id="cognitiveLevelDisplay" disabled></input>
+            <div class="col-5">
+                <!--text area for standard example added using bootstrap.-->
+                <div class="form-group">
+                    <label for="exampleDisplay">Example of Standard</label>
+                    <textarea class="form-control" id="exampleDisplay" disabled rows="3"></textarea>
+                </div>
+
             </div>
         </div>
     </div>
@@ -54,19 +91,16 @@
     <hr>
     <br>
     <div class="container">
-        <!---The properties your object should include the code (for instance MAFS.6.RP.1.1), grade level (6), 
-            description of standard (e.g., "Understand the concept of a ratio and use ratio
-             language to describe a ratio relationship between two quantities."), example o
-             f standard( “For every vote candidate A received, candidate C received nearly three votes.”)
-              and Cognitive complexity level (e.g., Level 2: Basic Application of Skills & Concepts),
-               and any other properties you want to includ-->
-               <div class="row">
-                   <div class="col-4"></div>
-                   <div class="col-4">
-                       <h3>Enter a New Standard</h1>
-                   </div>
-               </div>
-               <br>
+        <h6>Use the form below to add a standard and it's information to the above Standards Selector.</h6>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4">
+                <h3>Enter a New Standard</h1>
+            </div>
+        </div>
+        <br>
         <form id="standardForm">
             <div class="row">
                 <div class="col-4">
@@ -78,27 +112,30 @@
                     <input id="gradeInput"></input>
                 </div>
                 <div class="col-4">
-                    <label for="descInput">Description</label>
-                    <input id="descInput"></input>
+                    <label for="cognitiveLevelDisplay" class="">Cognitive Lvl</label>
+                    <input id="cognitiveLevelDisplay"></input>
+                    <br>
                 </div>
             </div>
             <br>
             <div class="row">
                 <div class="col-4">
-                    <label for="exampleInput">Example</label>
-                    <input id="exampleInput"></input>
+                    <!--text area for standard description added using bootstrap.-->
+                    <div class="form-group">
+                        <label for="descDisplay">Description of Standard</label>
+                        <textarea class="form-control" id="descDisplay" rows="3"></textarea>
+                    </div>
                 </div>
                 <div class="col-4">
-                    <label for="cognitiveLevelInput" class="">Cog. Level</label>
-                    <input id="cognitiveLevelInput"></input>
+                    <!--text area for standard example added using bootstrap.-->
+                    <div class="form-group">
+                        <label for="exampleDisplay">Example of Standard</label>
+                        <textarea class="form-control" id="exampleDisplay" rows="3"></textarea>
+                    </div>
+
                 </div>
             </div>
-            <div class="row">
-                <div class="col-10"></div>
-                <div class="col-2">
-                    <button type="button" onclick="addCustomStandard()">Add Standard</button>
-                </div>
-            </form>
-        </form>
-    </div>
+    </form>
 </body>
+
+</html>

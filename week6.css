@@ -1,0 +1,21 @@
+h3 {
+color: midnightblue;
+}
+h6 {
+    color:midnightblue;
+   margin-left: 30%;
+}
+body {
+    background-color: rgb(180, 219, 235);
+}
+.media {
+margin-top: 10%;
+text-align: left;
+margin-left: 10%;
+margin-block-end: auto;
+margin-right: 10%;
+justify-self: center;
+}
+p {
+    font-size: larger;
+}
