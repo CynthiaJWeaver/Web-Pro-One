@@ -2,7 +2,10 @@
 <html lang="en">
 
 <head>
-    <!--Lines 1 through 140 are  same code from Assignment 6. Added an array -->
+    <!--Lines 42 through 140 are  same code from Assignment 6 with minor changes for clarity and visual appeal. 
+        *Added for week 8: an intorduction with a logo for visual appeal,
+    an array for information about who adds to the standards selector and which standard they added-->
+
     <!-- Required meta tags for responsive page-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,16 +17,18 @@
     <title>CJWeaver Week 6</title>
 
 </head>
-<!---Assignment:The properties your object should include-- the code (for instance MAFS.6.RP.1.1), grade level (6), 
+<!---Week 6 Assignment:The properties your object should include-- the code (for instance MAFS.6.RP.1.1), grade level (6), 
             description of standard (e.g., "Understand the concept of a ratio and use ratio
              language to describe a ratio relationship between two quantities."), example o
              f standard( “For every vote candidate A received, candidate C received nearly three votes.”)
               and Cognitive complexity level (e.g., Level 2: Basic Application of Skills & Concepts)-->
+<!--Week 8 Assignment: Use arrays on your own EDUCATIONAL content. Your content should related to learning in some way. 
+            Please explain that in the comments. -->
 
 <body>
     <br><br>
 
-    <!--introduction with image-->
+    <!--introduction with image - This introduces the new BEST standards with a short explanation of the middle school ELA learning band.-->
     <div class="media">
         <img src="images\FL BEST logo sized.jpg" alt="FL Best">
         <!--logo added from Creative Commons-->
@@ -36,7 +41,7 @@
                 time
                 periods. </p>
             <hr>
-            <p>Select a standard from the dropdown menu for a description and corresponding literature.</p>
+            <p>Select an ELA standard from the dropdown menu to view a description and corresponding literature.</p>
 
             <div class="container">
                 <!--dropdown for standard selector-->
@@ -45,7 +50,8 @@
                     <!--4-column wide divs using bootstrap column grids-->
                     <div class="col-4">
                         <div class="form-group">
-                            <h3><label for="standardSelector">Select Ex. Standard</label></h3>
+                            <h4><label for="standardSelector">Select ELA Ex. Standard</label></h4> 
+                            <!--change to reflect that the standards in the selector are ELA only -->
                             <select class="form-control" id="standardSelector" onchange="displayStandard()">
                             </select>
                         </div>
@@ -92,13 +98,13 @@
             <hr>
             <br>
             <div class="container">
-                <h6>Use the form below to add a standard and it's information to the above Standard's Selector.</h6>
+                <h6>Use the form below to add an ELA standard and it's information to the above Standard's Selector.</h6>
             </div>
             <div class="container">
                 <div class="row">
                     <div class="col-4"></div>
                     <div class="col-4">
-                        <h3>Enter a Standard</h1>
+                        <h4>Enter an ELA Standard</h4> <!--changed to request only ELA standards-->
                     </div>
                 </div>
                 <br>
@@ -138,6 +144,8 @@
                 </form>
                 </form>
             </div>
+            <br><br>
+            
 </body>
 
 </html>
