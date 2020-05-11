@@ -1,20 +1,24 @@
 h3 {
-color: midnightblue;
+    color: midnightblue;
 }
+
 h6 {
-    color:midnightblue;
-   margin-left: 30%;
+    color: midnightblue;
+    margin-left: 30%;
 }
+
 body {
-    background-color: rgb(180, 219, 235);
+
     margin-left: .05%;
 }
+
 .media {
-text-align: left;
-margin-left: 10%;
-margin-right: 10%;
-justify-self: center;
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-self: center;
 }
+
 p {
     font-size: larger;
 }

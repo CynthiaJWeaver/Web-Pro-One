@@ -31,111 +31,112 @@
             <h2>English Language Arts Grades 6-8</h2>
             <h5>Benchmarks For Excellent Student Thinking. (Adopted February 2020)</h5>
             <p>In grades 6-8, analysis and writing are of primary focus. Rhetoric is introduced in 6th grade. Students
-                go from explaining theme to analyzing it. Students are also being introduced to literature from historic time
+                go from explaining theme to analyzing it. Students are also being introduced to literature from historic
+                time
                 periods. </p>
             <hr>
             <p>Select a standard from the dropdown menu for a description and corresponding literature.</p>
-                
-    <div class="container">
-        <!--dropdown for standard selector-->
-        <div class="row">
-            <div class="col-4"></div>
-            <!--4-column wide divs using bootstrap column grids-->
-            <div class="col-4">
-                <div class="form-group">
-                    <h3><label for="standardSelector">Select Ex. Standard</label></h3>
-                    <select class="form-control" id="standardSelector" onchange="displayStandard()">
-                    </select>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-4">
-                <label for="codeDisplay">Code</label>
-                <input id="codeDisplay" disabled></input>
-                <!--user input disabled for form fields using *disabled-->
-            </div>
-            <div class="col-4">
-                <label for="gradeDisplay">Grade</label>
-                <input id="gradeDisplay" disabled></input>
-            </div>
-            <div class="col-4">
-                <label for="cognitiveLevelDisplay" class="">Cognitive Lvl</label>
-                <input id="cognitiveLevelDisplay" disabled></input>
-                <br>
-            </div>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col-4">
-                <!--text area for standard description added using bootstrap.-->
-                <div class="form-group">
-                    <label for="descDisplay">Description of Standard</label>
-                    <textarea class="form-control" id="descDisplay" disabled rows="3"></textarea>
-                </div>
-            </div>
-                <div class="col-4">
-                    <!--text area for standard example added using bootstrap.-->
-                    <div class="form-group">
-                        <label for="exampleDisplay">Example of Standard</label>
-                        <textarea class="form-control" id="exampleDisplay" disabled rows="3"></textarea>
+
+            <div class="container">
+                <!--dropdown for standard selector-->
+                <div class="row">
+                    <div class="col-4"></div>
+                    <!--4-column wide divs using bootstrap column grids-->
+                    <div class="col-4">
+                        <div class="form-group">
+                            <h3><label for="standardSelector">Select Ex. Standard</label></h3>
+                            <select class="form-control" id="standardSelector" onchange="displayStandard()">
+                            </select>
+                        </div>
                     </div>
-                
                 </div>
             </div>
-        </div>
-        <br>
-        <hr>
-        <br>
-        <div class="container">
-        <h6>Use the form below to add a standard and it's information to the above Standard's Selector.</h6>
-        </
-        <div class="container">
-            <div class="row">
-                <div class="col-4"></div>
-                <div class="col-4">
-                    <h3>Enter a New Standard</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <label for="codeDisplay">Code</label>
+                        <input id="codeDisplay" disabled></input>
+                        <!--user input disabled for form fields using *disabled-->
+                    </div>
+                    <div class="col-4">
+                        <label for="gradeDisplay">Grade</label>
+                        <input id="gradeDisplay" disabled></input>
+                    </div>
+                    <div class="col-4">
+                        <label for="cognitiveLevelDisplay" class="">Cognitive Lvl</label>
+                        <input id="cognitiveLevelDisplay" disabled></input>
+                        <br>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-4">
+                        <!--text area for standard description added using bootstrap.-->
+                        <div class="form-group">
+                            <label for="descDisplay">Description of Standard</label>
+                            <textarea class="form-control" id="descDisplay" disabled rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <!--text area for standard example added using bootstrap.-->
+                        <div class="form-group">
+                            <label for="exampleDisplay">Literature Example</label>
+                            <textarea class="form-control" id="exampleDisplay" disabled rows="3"></textarea>
+                        </div>
+
+                    </div>
                 </div>
             </div>
             <br>
-            <form id="standardForm">
+            <hr>
+            <br>
+            <div class="container">
+                <h6>Use the form below to add a standard and it's information to the above Standard's Selector.</h6>
+            </div>
+            <div class="container">
                 <div class="row">
+                    <div class="col-4"></div>
                     <div class="col-4">
-                        <label for="codeInput">Code</label>
-                        <input id=codeInput></input>
-                    </div>
-                    <div class="col-4">
-                        <label for="gradeInput">Grade</label>
-                        <input id="gradeInput"></input>
-                    </div>
-                    <div class="col-4">
-                        <label for="descInput">Description</label>
-                        <input id="descInput"></input>
+                        <h3>Enter a Standard</h1>
                     </div>
                 </div>
                 <br>
-                <div class="row">
-                    <div class="col-4">
-                        <label for="exampleInput">Example</label>
-                        <input id="exampleInput"></input>
+                <form id="standardForm">
+                    <div class="row">
+                        <div class="col-4">
+                            <label for="codeInput">Code</label>
+                            <input id=codeInput></input>
+                        </div>
+                        <div class="col-4">
+                            <label for="gradeInput">Grade</label>
+                            <input id="gradeInput"></input>
+                        </div>
+                        <div class="col-4">
+                            <label for="descInput">Description</label>
+                            <input id="descInput"></input>
+                        </div>
                     </div>
-                    <div class="col-4">
-                        <label for="cognitiveLevelInput" class="">Cog. Level</label>
-                        <input id="cognitiveLevelInput"></input>
+                    <br>
+                    <div class="row">
+                        <div class="col-4">
+                            <label for="exampleInput">Example</label>
+                            <input id="exampleInput"></input>
+                        </div>
+                        <div class="col-4">
+                            <label for="cognitiveLevelInput" class="">Cog. Level</label>
+                            <input id="cognitiveLevelInput"></input>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-10"></div>
-                    <div class="col-2">
-                        <!--change button type to disable autosubmit-->
-                        <button type="button" onclick="addCustomStandard()">Add Standard</button>
-                    </div>
-                    console.log
-            </form>
-            </form>
-        </div>
+                    <div class="row">
+                        <div class="col-10"></div>
+                        <div class="col-2">
+                            <!--change button type to disable autosubmit-->
+                            <button type="button" onclick="addCustomStandard()">Add Standard</button>
+                        </div>
+
+                </form>
+                </form>
+            </div>
 </body>
 
 </html>

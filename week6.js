@@ -1,20 +1,44 @@
 let standards = [{
-        grade: 4,
-        code: "MAFS.4.OA.1.1",
+        grade: 6,
+        code: "ELA.6.R.1.1",
         cognitiveLevel: 2,
-        example: '',
-        desc: 'Interpret a multiplication equation as a comparison, e.g., interpret 35 = 5 × 7 as a ' +
-            'statement that 35 is 5 times as many as 7 and 7 times as many as 5. Represent verbal statements of ' +
-            'multiplicative comparisons as multiplication equations.'
+        example: 'A Long Walk to Water by Linda Sue Park',
+        desc: 'Analyze how the interaction between characters contributes to the development of a plot in a literary text.'
     },
     {
-        grade: 4,
-        code: "MAFS.4.OA.1.2",
+        grade: 6,
+        code: "ELA.6.R.1.2",
+        cognitiveLevel: 3,
+        example: "The Devil's Arithmetic by Jane Yolen",
+        desc: 'Analyze the development of stated or implied theme(s) throughout a literary text.'
+    },
+    {
+        grade: 7,
+        code: "ELA.7.R.1.1",
         cognitiveLevel: 2,
-        example: '',
-        desc: 'Multiply or divide to solve word problems involving multiplicative comparison, e.g., ' +
-            'by using drawings and equations with a symbol for the unknown number to represent the problem, ' +
-            'distinguishing multiplicative comparison from additive comparison.'
+        example: "“An Occurrence at Owl Creek Bridge” by Ambrose Bierce",
+        desc: ' Analyze the impact of setting on character development and plot in a literary text.'
+    },
+    {
+        grade: 7,
+        code: "ELA.7.R.1.2",
+        cognitiveLevel: 3,
+        example: "“Do Not Go Gentle into That Good Night” by Dylan Thomas",
+        desc: 'Compare two or more themes and their development throughout a literary text.'
+    },
+    {
+        grade: 8,
+        code: "ELA.8.R.1.1",
+        cognitiveLevel: 2,
+        example: "Dr. Jekyll and Mr. Hyde by Robert Louis Stevenson ",
+        desc: 'Analyze the interaction between character development, setting, and plot in a literary text.'
+    },
+    {
+        grade: 8,
+        code: "ELA.8.R.1.2",
+        cognitiveLevel: 3,
+        example: "To Kill a Mockingbird by Harper Lee",
+        desc: 'Analyze two or more themes and their development throughout a literary text.'
     }
 ];
 
@@ -29,7 +53,7 @@ window.onload = function () {
 
 function displayStandard() {
     let standardIndex = document.getElementById('standardSelector').value; //index of the selected standard
-    for(let i = 0; i < properties.length; i++) {
+    for (let i = 0; i < properties.length; i++) {
         let sel = document.getElementById(properties[i] + 'Display');
         sel.value = standards[standardIndex][properties[i]];
     }
@@ -45,7 +69,7 @@ function addDefaultStandard(code, index) {
 
 function addCustomStandard() {
     let newStandard = {};
-    for(let i = 0; i < properties.length; i++) {
+    for (let i = 0; i < properties.length; i++) {
         let value = document.getElementById(properties[i] + 'Input').value;
         newStandard[properties[i]] = value;
     }
